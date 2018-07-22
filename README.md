@@ -2,7 +2,7 @@
 Servicio para consultar una empresa desde PHP.
 
         String apiKey = "PNVn0DEQiy9iKsG7yO7al1c9vjVZBabi1UIhEqAP";
-        include './server/ApiConsultaServicio.php';
+        include './ApiConsultaServicio.php';
         $entity = ApiConsultaServicio::basic("PNVn0DEQiy9iKsG7yO7al1c9vjVZBabi1UIhEqAP", "20600567013");
         print_r($entity);
         echo '<br/>';
@@ -21,7 +21,6 @@ Servicio para consultar una empresa desde PHP.
 Al ingresar al navegador podemos obtener el siguiente resultado...
 http://localhost/Main.php
 
-        include './ApiConsultaServicio.php';
         Array ( [success] => 1 [message] => Ruc encontrado [item] => Array ( [_id] => 20600567013 [name] => FIT CODERS S.R.L. [state] =>                    ACTIVO [condition] => HABIDO [ubigeo] => 100601 [address] => SAN MIGUEL CASTILLO GRANDE Lt. 12 Mz. 07 ) ) 
         -----------------------------------
         Ruc: 20600567013
